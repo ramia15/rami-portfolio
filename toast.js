@@ -11,6 +11,10 @@ document.getElementById('contactForm').addEventListener('submit', async function
             body: formData
         });
 
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const result = await response.json();
 
         if (result.success) {
@@ -23,7 +27,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
             toastElement.style.backgroundColor = '#f44336';
         }
     } catch (error) {
-        console.error('Fetch error:', error);
+        console.error('Fetch error:', error.message);
         toastMessageElement.textContent = 'An error occurred. Please try again later.';
         toastIconElement.innerHTML = '<i class="fas fa-exclamation-circle"></i>';
         toastElement.style.backgroundColor = '#f44336';
