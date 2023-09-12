@@ -23,6 +23,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
             toastElement.style.backgroundColor = '#f44336';
         }
     } catch (error) {
+        console.error('Fetch error:', error);
         toastMessageElement.textContent = 'An error occurred. Please try again later.';
         toastIconElement.innerHTML = '<i class="fas fa-exclamation-circle"></i>';
         toastElement.style.backgroundColor = '#f44336';

@@ -1,8 +1,6 @@
 const nodemailer = require('nodemailer');
 const fetch = require('node-fetch');
 
-
-
 module.exports = async (req, res) => {
     if (req.method !== 'POST') {
         return res.status(405).send({ error: 'Only POST requests are allowed' });
@@ -11,6 +9,7 @@ module.exports = async (req, res) => {
     // Check for required fields
     const { name, email, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
     if (!name || !email || !message || !recaptchaResponse) {
+        console.error('Missing required fields.');
         return res.status(400).send({ success: false, message: 'Missing required fields.' });
     }
 
@@ -21,6 +20,7 @@ module.exports = async (req, res) => {
         const recaptchaResult = await recaptchaVerification.json();
 
         if (!recaptchaResult.success) {
+            console.error('reCAPTCHA verification failed.');
             return res.status(400).json({ success: false, message: 'reCAPTCHA verification failed.' });
         }
 
@@ -44,14 +44,15 @@ module.exports = async (req, res) => {
         // Send email
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.error('Email sending error:', error.message); // Log detailed error server-side
+                console.error('Email sending error:', error.message);
                 return res.status(500).send({ success: false, message: 'Failed to send email.' });
             }
+            console.log('Email sent successfully:', info.response);
             res.status(200).send({ success: true, info: info.response });
         });
 
     } catch (error) {
-        console.error('Unexpected error:', error.message); // Log detailed error server-side
+        console.error('Unexpected error:', error.message);
         return res.status(500).send({ success: false, message: 'An unexpected error occurred.' });
     }
 };
