@@ -23,7 +23,7 @@ gsap.set(spans, {
 });
 
 
-gsap.to(spans[-1], {
+gsap.to(spans[0], {
     rotation: 360,
     transformOrigin: '-22vw -16vh',
     boxShadow: '100vmin 0 13.414128397628808vmin currentColor',
@@ -34,7 +34,7 @@ gsap.to(spans[-1], {
     left: '38%'
 });
 
-gsap.set(spans[0], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[0], {
+gsap.set(spans[1], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[0], {
     rotation: 360,
     transformOrigin: '-7vw 13vh',
     boxShadow: '-100vmin 0 13.285120293367132vmin currentColor',
@@ -45,7 +45,7 @@ gsap.set(spans[0], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[0], {
     left: '87%'
 });
 
-gsap.set(spans[1], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[1], {
+gsap.set(spans[2], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[1], {
     rotation: 360,
     transformOrigin: '-4vw -5vh',
     boxShadow: '-100vmin 0 13.0565926444784vmin currentColor',
@@ -56,7 +56,7 @@ gsap.set(spans[1], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[1], {
     left: '41%'
 });
 
-gsap.set(spans[2], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[2], {
+gsap.set(spans[3], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[2], {
     rotation: 360,
     transformOrigin: '-20vw -22vh',
     boxShadow: '100vmin 0 12.639104274735896vmin currentColor',
@@ -67,7 +67,7 @@ gsap.set(spans[2], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[2], {
     left: '82%'
 });
 
-gsap.set(spans[3], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[3], {
+gsap.set(spans[4], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[3], {
     rotation: 360,
     transformOrigin: '-10vw -2vh',
     boxShadow: '-100vmin 0 13.489795539367812vmin currentColor',
@@ -78,7 +78,7 @@ gsap.set(spans[3], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[3], {
     left: '35%'
 });
 
-gsap.set(spans[4], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[4], {
+gsap.set(spans[5], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[4], {
     rotation: 360,
     transformOrigin: '-22vw -23vh',
     boxShadow: '-100vmin 0 12.974404512437442vmin currentColor',
@@ -89,7 +89,7 @@ gsap.set(spans[4], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[4], {
     left: '59%'
 });
 
-gsap.set(spans[5], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[5], {
+gsap.set(spans[6], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[5], {
     rotation: 360,
     transformOrigin: '21vw -22vh',
     boxShadow: '-100vmin 0 13.274572983984964vmin currentColor',
@@ -100,7 +100,7 @@ gsap.set(spans[5], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[5], {
     left: '74%'
 });
 
-gsap.set(spans[6], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[6], {
+gsap.set(spans[7], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[6], {
     rotation: 360,
     transformOrigin: '-10vw -7vh',
     boxShadow: '100vmin 0 12.793673199870744vmin currentColor',
@@ -111,7 +111,7 @@ gsap.set(spans[6], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[6], {
     left: '40%'
 });
 
-gsap.set(spans[7], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[7], {
+gsap.set(spans[8], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[7], {
     rotation: 360,
     transformOrigin: '-22vw -12vh',
     boxShadow: '100vmin 0 12.639027962072472vmin currentColor',
@@ -122,7 +122,7 @@ gsap.set(spans[7], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[7], {
     left: '6%'
 });
 
-gsap.set(spans[8], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[8], {
+gsap.set(spans[9], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[8], {
     rotation: 360,
     transformOrigin: '-6vw 13vh',
     boxShadow: '100vmin 0 13.450434246512222vmin currentColor',
@@ -133,7 +133,7 @@ gsap.set(spans[8], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[8], {
     left: '62%'
 });
 
-gsap.set(spans[9], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[9], {
+gsap.set(spans[10], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[9], {
     rotation: 360,
     transformOrigin: '24vw -12vh',
     boxShadow: '100vmin 0 13.093785681558426vmin currentColor',
@@ -144,7 +144,7 @@ gsap.set(spans[9], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[9], {
     left: '27%'
 });
 
-gsap.set(spans[10], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[10], {
+gsap.set(spans[11], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[10], {
     rotation: 360,
     transformOrigin: '5vw -21vh',
     boxShadow: '100vmin 0 12.933457838566937vmin currentColor',
@@ -155,7 +155,7 @@ gsap.set(spans[10], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[10], {
     left: '49%'
 });
 
-gsap.set(spans[11], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[11], {
+gsap.set(spans[12], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[11], {
     rotation: 360,
     transformOrigin: '19vw 23vh',
     boxShadow: '-100vmin 0 13.432373972452893vmin currentColor',
@@ -166,7 +166,7 @@ gsap.set(spans[11], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[11], {
     left: '51%'
 });
 
-gsap.set(spans[12], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[12], {
+gsap.set(spans[13], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[12], {
     rotation: 360,
     transformOrigin: '-20vw -12vh',
     boxShadow: '-100vmin 0 13.000772814922291vmin currentColor',
@@ -177,7 +177,7 @@ gsap.set(spans[12], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[12], {
     left: '61%'
 });
 
-gsap.set(spans[13], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[13], {
+gsap.set(spans[14], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[13], {
     rotation: 360,
     transformOrigin: '-14vw 10vh',
     boxShadow: '-100vmin 0 12.608171893618925vmin currentColor',
@@ -189,14 +189,22 @@ gsap.set(spans[13], {transform: 'translate3d(0, 0, 0)'}); gsap.to(spans[13], {
 });
 
 
+let lastX = 0;
+let lastY = 0;
 document.addEventListener('mousemove', (e) => {
-    const x = (window.innerWidth / 2 - e.pageX) / 20;
-    const y = (window.innerHeight / 2 - e.pageY) / 20;
-
+  const x = (window.innerWidth / 2 - e.pageX) / 20;
+  const y = (window.innerHeight / 2 - e.pageY) / 20;
+  
+  // Use requestAnimationFrame for smoother animations
+  requestAnimationFrame(() => {
     gsap.to(spans, {
-        x: x,
-        y: y,
-        duration: 0.5,
-        overwrite: 'auto'
+      x: lastX + (x - lastX) / 10, 
+      y: lastY + (y - lastY) / 10,
+      duration: 0.5,
+      overwrite: 'auto'
     });
+  });
+
+  lastX = x;
+  lastY = y;
 });

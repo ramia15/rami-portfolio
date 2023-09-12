@@ -1,12 +1,9 @@
-gsap.registerPlugin(ScrollTrigger);
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
 
     // Stagger fade in the projects with cascade effect from right
-    gsap.registerPlugin(ScrollTrigger);
     gsap.utils.toArray('.project').forEach((project, index) => {
         gsap.fromTo(project, 
             { x: '100%', opacity: 0 }, // From state
@@ -21,18 +18,24 @@ document.addEventListener('DOMContentLoaded', function () {
                     toggleActions: 'play none none reverse'
                 }
             });
-            
     });
 
-    
     // Filter content function
     const filterButtons = document.querySelectorAll('.btn-filter');
-filterButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        const type = e.target.getAttribute('data-type');
-        filterContent(type);
+    filterButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const type = e.target.getAttribute('data-type');
+            
+            // Pause any active GSAP animations
+            gsap.globalTimeline.pause();
+            
+            filterContent(type);
+            
+            // Refresh ScrollTrigger after the animations
+            ScrollTrigger.refresh();
+        });
     });
-});
+
     function filterContent(type) {
         const webDevSection = document.getElementById('web-dev');
         const graphicDesignSection = document.getElementById('graphic-design');
@@ -66,5 +69,7 @@ filterButtons.forEach(button => {
         }
     }
 
-    window.filterContent = filterContent;  // expose the function to global scope to be callable from HTML
+    // Expose the function to global scope to be callable from HTML
+    window.filterContent = filterContent;
+
 });
