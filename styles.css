@@ -19,6 +19,7 @@ section {
     --border-color: #fff;
     --input-bg-color: rgba(255, 255, 255, 0.1);
 }
+
 .navbar-toggler {
     border: none;
     background: transparent;
@@ -27,19 +28,20 @@ section {
 
 .navbar-toggler:focus {
     box-shadow: none;
-    outline:none;
+    outline: none;
 }
 
 .navbar-toggler-icon {
     position: relative;
     background-color: transparent !important;
-    height: 30px; /* Adjusted to increase space */
+    height: 30px;
+    /* Adjusted to increase space */
     width: 30px;
 }
 
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after,
-.navbar-toggler-icon > span {
+.navbar-toggler-icon>span {
     content: '';
     position: absolute;
     left: 0;
@@ -50,14 +52,16 @@ section {
 }
 
 .navbar-toggler-icon::before {
-    top: 5px; /* Adjusted to increase space */
+    top: 5px;
+    /* Adjusted to increase space */
 }
 
 .navbar-toggler-icon::after {
-    bottom: 5px; /* Adjusted to increase space */
+    bottom: 5px;
+    /* Adjusted to increase space */
 }
 
-.navbar-toggler-icon > span {
+.navbar-toggler-icon>span {
     top: 50%;
     transform: translateY(-50%);
 }
@@ -73,7 +77,7 @@ section {
     bottom: 50%;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon > span {
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon>span {
     opacity: 0;
 }
 
@@ -109,10 +113,10 @@ header {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .navbar {
@@ -131,15 +135,20 @@ header {
     color: var(--text-color);
     text-decoration: none;
     padding: 5px 10px;
-    transition: font-weight 0.3s ease, text-shadow 0.3s ease;  /* Add transition for both font-weight and text-shadow */
+    transition: font-weight 0.3s ease, text-shadow 0.3s ease;
+    /* Add transition for both font-weight and text-shadow */
 
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     font-weight: bold;
-    color: #6CC0CB;  /* Changing color to one of the provided options */
-    text-decoration: none;  /* This will remove any underlines if present */
-    text-shadow: 0 0 5px #9f3ba8, 0 0 10px #9f3ba8, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;  /* Adding a subtle glow */
+    color: #6CC0CB;
+    /* Changing color to one of the provided options */
+    text-decoration: none;
+    /* This will remove any underlines if present */
+    text-shadow: 0 0 5px #9f3ba8, 0 0 10px #9f3ba8, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;
+    /* Adding a subtle glow */
 }
 
 .project-link {
@@ -228,7 +237,7 @@ h1 .h1-container {
 }
 
 h1 {
-    font-size:clamp(1rem, 12vw, 6rem);
+    font-size: clamp(1rem, 12vw, 6rem);
     margin-bottom: 20px;
     font-weight: bold;
     color: #FFF;
@@ -236,7 +245,11 @@ h1 {
     z-index: 2;
 }
 
-.hero, #skills-experience, #about-me, .projects, #contact {
+.hero,
+#skills-experience,
+#about-me,
+.projects,
+#contact {
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -269,12 +282,15 @@ h1 {
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
     border-radius: 10px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
 }
 
 .btn-primary:hover {
-    box-shadow: 0 0 5px #6CC0CB, 0 0 10px #6CC0CB, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;  /* Glowing effect on hover */
-    transform: translateY(-3px);  /* Slight lift effect */
+    box-shadow: 0 0 5px #6CC0CB, 0 0 10px #6CC0CB, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;
+    /* Glowing effect on hover */
+    transform: translateY(-3px);
+    /* Slight lift effect */
 }
 
 /* Outline Button */
@@ -286,13 +302,17 @@ h1 {
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
     border-radius: 10px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
 }
 
 .btn-outline:hover {
-    background-color: rgba(255, 255, 255, 0.93);  /* Slight background to maintain glassmorphism */
-    box-shadow: 0 0 5px white, 0 0 10px white;  /* Glowing effect on hover */
-    transform: translateY(-3px);  /* Slight lift effect */
+    background-color: rgba(255, 255, 255, 0.93);
+    /* Slight background to maintain glassmorphism */
+    box-shadow: 0 0 5px white, 0 0 10px white;
+    /* Glowing effect on hover */
+    transform: translateY(-3px);
+    /* Slight lift effect */
 }
 
 #skills-experience {
@@ -381,7 +401,6 @@ li {
 
 .projects {
     padding: 4rem 0;
-    overflow-x: hidden;
 }
 
 
@@ -389,8 +408,9 @@ li {
     transform: translateY(-10px);
 }
 
-.project h3, #contact .container h2 {
-    font-size: 3rem;
+.project h3,
+#contact .container h2 {
+    font-size: clamp(1rem, 8vw, 2.78rem);
     text-align: center;
 }
 
@@ -399,7 +419,7 @@ li {
 }
 
 .captcha-container {
-    padding:20px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,14 +480,17 @@ li {
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
     border-radius: 10px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
 }
 
 .project-link:hover {
-    box-shadow: 0 0 5px #6CC0CB, 0 0 10px #6CC0CB, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;  /* Glowing effect on hover */
-    transform: translateY(-3px);  /* Slight lift effect */
+    box-shadow: 0 0 5px #6CC0CB, 0 0 10px #6CC0CB, 0 0 15px #9f3ba8, 0 0 20px #9f3ba8;
+    /* Glowing effect on hover */
+    transform: translateY(-3px);
+    /* Slight lift effect */
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .category,
@@ -475,13 +498,17 @@ li {
     font-size: 0.9rem;
     color: var(--accent-color);
     width: 50%;
-    min-height: 80px; /* Setting a minimum height */
+    min-height: 80px;
+    /* Setting a minimum height */
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
-    display: inline-flex;    /* Use inline-flex to keep the element inline but allow flex properties */
-    align-items: center;     /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
+    display: inline-flex;
+    /* Use inline-flex to keep the element inline but allow flex properties */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: center;
+    /* Horizontally center content */
 }
 
 
@@ -489,8 +516,8 @@ li {
     padding: 100px 0;
 }
 
-.projects .container .row{
-    display:block;
+.projects .container .row {
+    display: block;
 }
 
 .content-container {
@@ -557,10 +584,12 @@ button[type="submit"]:hover {
     mask: repeat;
     margin-right: 20px;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     transition: all 0.3s ease;
 }
-.navbar-brand img:hover{
+
+.navbar-brand img:hover {
     transform: scale(1.1);
 }
 
@@ -584,6 +613,7 @@ button[type="submit"]:hover {
         text-align: center;
         align-self: center;
     }
+
     .project figcaption {
         flex-direction: row;
         justify-content: space-between;
@@ -599,7 +629,7 @@ button[type="submit"]:hover {
     .project-link {
         margin-bottom: 10px;
     }
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -609,9 +639,20 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .project figure {
-        width:50%;
+    .project img {
+        display: block;
+        max-width: 75%;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        object-fit: cover;
+        margin: 0px auto;
     }
+    .project figure {
+        width: 50%;
+    }
+
     .navbar {
         padding: 0.5rem 1rem;
     }
@@ -619,11 +660,43 @@ button[type="submit"]:hover {
     .navbar-nav {
         gap: 10px;
     }
-    section{
-        margin:5rem 1rem;
+
+    section {
+        margin: 5rem 1rem;
     }
+
     .navbar-collapse {
         padding: 30px;
+    }
+
+    .padding-section {
+        padding: 0 30px;
+    }
+
+    .project figcaption {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .category,
+    .technologies {
+        font-size: 0.9rem;
+        color: var(--accent-color);
+        width: 50%;
+        min-height: 126px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-container {
+        display: block;
     }
 }
 
@@ -650,21 +723,49 @@ button[type="submit"]:hover {
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
