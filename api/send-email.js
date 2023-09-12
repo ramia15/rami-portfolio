@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
-const fetch = require('node-fetch');
+const fetch = (await import('node-fetch')).default;
+
 
 module.exports = async (req, res) => {
     if (req.method !== 'POST') {
