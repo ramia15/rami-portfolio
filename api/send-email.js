@@ -6,14 +6,15 @@ module.exports = async (req, res) => {
         return res.status(405).send({ error: 'Only POST requests are allowed' });
     }
 
-    // Check for required fields
-    const { name, email, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
-    if (!name || !email || !message || !recaptchaResponse) {
-        console.error('Missing required fields.');
-        return res.status(400).send({ success: false, message: 'Missing required fields.' });
-    }
-
     try {
+        const { name, email, message, 'g-recaptcha-response': recaptchaResponse } = req.body;
+
+        // Check for required fields
+        if (!name || !email || !message || !recaptchaResponse) {
+            console.error('Missing required fields.');
+            return res.status(400).send({ success: false, message: 'Missing required fields.' });
+        }
+
         // Verify reCAPTCHA
         const verificationURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaResponse}`;
         const recaptchaVerification = await fetch(verificationURL, { method: 'POST' });
