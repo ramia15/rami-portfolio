@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', async function(event) {
+document.getElementById('contact').addEventListener('submit', async function(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const toastElement = document.getElementById('toast');
